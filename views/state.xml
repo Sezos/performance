@@ -1,0 +1,34 @@
+<odoo>
+  <data>
+    <record model="ir.ui.view" id="performStateform">
+      <field name="name">performance state form</field>
+      <field name="model">performance.state</field>
+      <field name="arch" type="xml">
+        <form>
+          <sheet>
+            <group>
+              <field name="name"/>
+            </group>
+          </sheet>
+        </form>
+      </field>
+    </record>
+    <record model="ir.ui.view" id="performStatelist">
+      <field name="name">performance state list</field>
+      <field name="model">performance.state</field>
+      <field name="arch" type="xml">
+        <tree>
+          <field name="name"/>
+        </tree>
+      </field>
+    </record>
+
+    <record model="ir.actions.act_window" id="state_action_window">
+      <field name="name">performance state window</field>
+      <field name="res_model">performance.state</field>
+      <field name="view_mode">tree,form</field>
+    </record>
+
+    <menuitem name="performance state" id = "performance_state_menu" parent="performance.menu_root"  action="state_action_window"/>
+  </data>
+</odoo>
