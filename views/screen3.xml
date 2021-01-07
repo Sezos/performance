@@ -1,0 +1,43 @@
+<odoo>
+  <data>
+    <!-- explicit list view definition -->
+    <record model="ir.ui.view" id="screen3_form">
+      <field name="name">screen3 form</field>
+      <field name="model">screen3</field>
+      <field name="arch" type="xml">
+        <form>
+          <sheet>
+            <group col = "6" colspan="6">
+              <field name="ID"/>
+              <field name="applied_from"/>
+              <field name="applied_to"/>
+              <field name="description"/>
+              <field name="job_order_location"/>
+            </group>
+          </sheet>
+        </form>
+      </field>
+    </record>
+    <record model="ir.ui.view" id="screen3_tree">
+      <field name="name">screen3 tree</field>
+      <field name="model">screen3</field>
+      <field name="arch" type="xml">
+        <tree>
+          <field name="ID"/>
+          <field name="applied_from"/>
+          <field name="applied_to"/>
+          <field name="description"/>
+          <field name="job_order_location"/>
+        </tree>
+      </field>
+    </record>
+
+    <record model="ir.actions.act_window" id="screen3_action_window">
+      <field name="name">Захиалгын хүсэлт</field>
+      <field name="res_model">screen3</field>
+      <field name="view_mode">tree,form</field>
+    </record>
+
+    <menuitem name="Захиалгын хүсэлт" id="screen3_menu" parent="screen_menu_root"  action="screen3_action_window"/>
+  </data>
+</odoo>

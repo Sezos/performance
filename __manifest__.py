@@ -20,8 +20,11 @@
 
     'data': [
         'security/ir.model.access.csv',
-        'views/views.xml',
-        'views/state.xml'
+        'views/screen1.xml',
+        'views/screen2.xml',
+        'views/screen3.xml',
+        'views/screen4.xml',
+        'views/screen5.xml',
     ],
     'demo': [
         'demo/demo.xml',

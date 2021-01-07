@@ -1,0 +1,49 @@
+<odoo>
+  <data>
+    <!-- explicit list view definition -->
+    <record model="ir.ui.view" id="screen4_form">
+      <field name="name">screen4 form</field>
+      <field name="model">screen4</field>
+      <field name="arch" type="xml">
+        <form>
+          <sheet>
+            <group col = "6" colspan="6">
+              <field name="department"/>
+              <field name="work"/>
+              <field name="date"/>
+              <field name="shift"/>
+              <field name="position"/>
+              <field name="assigned_to"/>
+              <field name="supervisor"/>
+              <field name="verified_by"/>
+            </group>
+          </sheet>
+        </form>
+      </field>
+    </record>
+    <record model="ir.ui.view" id="screen4_tree">
+      <field name="name">screen4 tree</field>
+      <field name="model">screen4</field>
+      <field name="arch" type="xml">
+        <tree>
+          <field name="department"/>
+          <field name="work"/>
+          <field name="date"/>
+          <field name="shift"/>
+          <field name="position"/>
+          <field name="assigned_to"/>
+          <field name="supervisor"/>
+          <field name="verified_by"/>
+        </tree>
+      </field>
+    </record>
+    
+    <record model="ir.actions.act_window" id="screen4_action_window">
+      <field name="name">Наряд талбар</field>
+      <field name="res_model">screen4</field>
+      <field name="view_mode">tree,form</field>
+    </record>
+
+    <menuitem name="Наряд талбар" id="screen4_menu" parent="screen_menu_root"  action="screen4_action_window"/>
+  </data>
+</odoo>

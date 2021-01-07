@@ -1,0 +1,48 @@
+<odoo>
+  <data>
+    <!-- explicit list view definition -->
+    <record model="ir.ui.view" id="screen2_form">
+      <field name="name">screen2 form</field>
+      <field name="model">screen2</field>
+      <field name="arch" type="xml">
+        <form>
+          <sheet>
+            <group col = "6" colspan="6">
+              <field name="ID"/>
+              <field name="from_who"/>
+              <field name="from_where"/>
+              <field name="works"/>
+              <field name="date_begin"/>
+              <field name="date_end"/>
+              <field name="assigned_to"/>
+              <field name="accepted_by"/>
+            </group>
+          </sheet>
+        </form>
+      </field>
+    </record>
+    <record model="ir.ui.view" id="screen2_tree">
+      <field name="name">screen2 tree</field>
+      <field name="model">screen2</field>
+      <field name="arch" type="xml">
+        <tree>
+          <field name="ID"/>
+          <field name="from_who"/>
+          <field name="from_where"/>
+          <field name="works"/>
+          <field name="date_begin"/>
+          <field name="date_end"/>
+          <field name="assigned_to"/>
+          <field name="accepted_by"/>
+        </tree>
+      </field>
+    </record>
+    <record model="ir.actions.act_window" id="screen2_action_window">
+      <field name="name">Захиалгын хуудас</field>
+      <field name="res_model">screen2</field>
+      <field name="view_mode">tree,form</field>
+    </record>
+
+    <menuitem name="Захиалгын хуудас" id="screen2_menu" parent="screen_menu_root"  action="screen2_action_window"/>
+  </data>
+</odoo>

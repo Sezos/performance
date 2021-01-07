@@ -1,0 +1,49 @@
+<odoo>
+  <data>
+    <!-- explicit list view definition -->
+    <record model="ir.ui.view" id="screen1_form">
+      <field name="name">screen1 form</field>
+      <field name="model">screen1</field>
+      <field name="arch" type="xml">
+        <form>
+          <sheet>
+            <group col = "6" colspan="6">
+              <field name="ID"/>
+              <field name="department"/>
+              <field name="work"/>
+              <field name="date_begin"/>
+              <field name="date_end"/>
+              <field name="assigned_to"/>
+              <field name="supervisor"/>
+              <field name="verified_by"/>
+            </group>
+          </sheet>
+        </form>
+      </field>
+    </record>
+    <record model="ir.ui.view" id="screen1_tree">
+      <field name="name">screen1 tree</field>
+      <field name="model">screen1</field>
+      <field name="arch" type="xml">
+        <tree>
+          <field name="ID"/>
+          <field name="department"/>
+          <field name="work"/>
+          <field name="date_begin"/>
+          <field name="date_end"/>
+          <field name="assigned_to"/>
+          <field name="supervisor"/>
+          <field name="verified_by"/>
+        </tree>
+      </field>
+    </record>
+    <record model="ir.actions.act_window" id="screen1_action_window">
+      <field name="name">Хэлтсийн төлөвлөгөө боловсруулах</field>
+      <field name="res_model">screen1</field>
+      <field name="view_mode">tree,form</field>
+    </record>
+
+    <menuitem name="Ажил үүргийн удирлага" id="screen_menu_root" action="screen1_action_window"/>
+    <menuitem name="Хэлтсийн төлөвлөгөө боловсруулах" id="screen1_menu" parent="screen_menu_root"  action="screen1_action_window"/>
+  </data>
+</odoo>
