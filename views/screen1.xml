@@ -6,16 +6,24 @@
       <field name="model">screen1</field>
       <field name="arch" type="xml">
         <form>
+          <header>
+
+          </header>
           <sheet>
-            <group col = "6" colspan="6">
-              <field name="ID"/>
+            <group col = "4" colspan="4">
+              <!-- <field name="id"/> -->
               <field name="department"/>
-              <field name="work"/>
-              <field name="date_begin"/>
-              <field name="date_end"/>
               <field name="assigned_to"/>
               <field name="supervisor"/>
               <field name="verified_by"/>
+            </group>
+            
+            <group col = "4" colspan="4" string="Date">
+              <field name="date_begin"/>
+              <field name="date_end"/>
+            </group>
+            <group string="Work">
+              <field name="work"/>
             </group>
           </sheet>
         </form>
@@ -26,7 +34,7 @@
       <field name="model">screen1</field>
       <field name="arch" type="xml">
         <tree>
-          <field name="ID"/>
+          <field name="id"/>
           <field name="department"/>
           <field name="work"/>
           <field name="date_begin"/>

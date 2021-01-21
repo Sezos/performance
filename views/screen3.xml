@@ -8,11 +8,13 @@
         <form>
           <sheet>
             <group col = "6" colspan="6">
-              <field name="ID"/>
+              <!-- <field name="id"/> -->
               <field name="applied_from"/>
               <field name="applied_to"/>
-              <field name="description"/>
               <field name="job_order_location"/>
+            </group>
+            <group string="Description">
+              <field name="description"/>
             </group>
           </sheet>
         </form>
@@ -23,7 +25,7 @@
       <field name="model">screen3</field>
       <field name="arch" type="xml">
         <tree>
-          <field name="ID"/>
+          <field name="id"/>
           <field name="applied_from"/>
           <field name="applied_to"/>
           <field name="description"/>
