@@ -22,9 +22,7 @@
         'security/ir.model.access.csv',
         'views/screen1.xml',
         'views/screen2.xml',
-        'views/screen3.xml',
-        'views/screen4.xml',
-        'views/screen5.xml',
+        'views/screen3.xml'
     ],
     'demo': [
         'demo/demo.xml',

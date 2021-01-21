@@ -2,5 +2,3 @@ id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
 access_screen1,screen1,model_screen1,base.group_user,1,1,1,1
 access_screen2,screen2,model_screen2,base.group_user,1,1,1,1
 access_screen3,screen3,model_screen3,base.group_user,1,1,1,1
-access_screen4,screen4,model_screen4,base.group_user,1,1,1,1
-access_screen5,screen5,model_screen5,base.group_user,1,1,1,1

@@ -7,15 +7,19 @@
       <field name="arch" type="xml">
         <form>
           <sheet>
-            <group col = "6" colspan="6">
-              <field name="ID"/>
-              <field name="from_who"/>
+            <group col = "4" colspan="4">
+              <!-- <field name="id"/> -->
               <field name="from_where"/>
-              <field name="works"/>
-              <field name="date_begin"/>
-              <field name="date_end"/>
+              <field name="from_who"/>
               <field name="assigned_to"/>
               <field name="accepted_by"/>
+            </group>
+            <group col = "4" colspan="4" string = "Date">
+              <field name="date_begin"/>
+              <field name="date_end"/>
+            </group>
+            <group string ="Work">
+              <field name="works"/>
             </group>
           </sheet>
         </form>
@@ -26,7 +30,7 @@
       <field name="model">screen2</field>
       <field name="arch" type="xml">
         <tree>
-          <field name="ID"/>
+          <field name="id"/>
           <field name="from_who"/>
           <field name="from_where"/>
           <field name="works"/>
